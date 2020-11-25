@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="shortcut_AboutUS"
+        android:enabled="true"
+        android:icon="@drawable/help_icon"
+        android:shortcutShortLabel="@string/about_us"
+        android:shortcutLongLabel="@string/about_us">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.arogyademo"
+            android:targetClass="com.example.arogyademo.AboutUs">
+            <extra android:name="shortcut_name" android:value="Nothing"/>
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="shortcut_Login"
+        android:enabled="true"
+        android:icon="@drawable/person_login"
+        android:shortcutShortLabel="@string/login"
+        android:shortcutLongLabel="@string/login">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.arogyademo"
+            android:targetClass="com.example.arogyademo.SignInSignUpActivity"/>
+    </shortcut>
+</shortcuts>
